@@ -1,23 +1,36 @@
 <?php 
 
-class trick
-{
-      function doit()
-      {
-                echo __FUNCTION__;
-      }
-      function doitagain()
-      {
-                echo "THIS IS ".__FUNCTION__." METHOD ON ".__CLASS__." CLASS";
-      }
-}
 
-$obj=new trick();
+	abstract class person{
 
-//$obj->doit();
+		public $name = "nur";
+		public $age = 22;
 
-$obj->doitagain();
+		public function details(){
+			echo $this->name." is ".$this->age." years old </br>";
+		}
 
-echo "</br>".get_class($obj);
+		abstract public function prog();
+
+	}
+
+	class child extends person{
+
+		public function describe(){
+			return parent::details();
+		}
+
+		public function prog(){
+			echo $this->name." like to do programming";
+		}
+
+	}
+
+	$obj = new child();
+
+	$obj->describe();
+	echo "</br>";
+	$obj->prog();
+
 
 ?>
