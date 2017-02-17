@@ -1,34 +1,34 @@
 <?php 
 
-trait Java{
+	trait Java{
 
-	public function javaCoder()
-	{
-		echo "I love Java </br>";
+		public function javaCoder()
+		{
+			echo "I love Java </br>";
+		}
+
 	}
 
-}
+	trait Php{
 
-trait Php{
+		public function phpCoder()
+		{
+			echo "I love Php </br>";
+		}
 
-	public function phpCoder()
-	{
-		echo "I love Php </br>";
 	}
 
-}
+	trait JavaPhp{
+		use java,php;
+	}
 
-trait JavaPhp{
-	use java,php;
-}
-
-class TestClass{
-	use JavaPhp;
-}
+	class TestClass{
+		use JavaPhp;
+	}
 
 
-$obj = new TestClass;
-$obj->javaCoder();
-$obj->phpCoder();
+	$obj = new TestClass;
+	$obj->javaCoder();
+	$obj->phpCoder();
 
 ?>
