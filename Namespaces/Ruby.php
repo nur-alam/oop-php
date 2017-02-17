@@ -1,16 +1,11 @@
 <?php 
 
-namespace nur;
+	namespace nur;
 
-class Ruby{
-	
-	function __construct(){
-		echo "I am learning ruby </br>";
+	class Ruby{
+		
+		function __construct(){
+			echo "I am learning ruby </br>";
+		}
+
 	}
-
-}
-
-
-
-
-?>

@@ -1,29 +1,22 @@
 <?php 
 
 
-namespace nur;
+	namespace nur;
 
 
-class Java{
-	
-	function __construct(){
-		echo "I am learning java </br>";
+	class Java{
+		
+		function __construct(){
+			echo "I am learning java </br>";
+		}
+
 	}
 
-}
 
+	define("java", "I know java </br>");
 
-define("java", "I know java </br>");
+	const js = "i love js also.</br>";
 
-const js = "i love js also.</br>";
-
-function prog(){
-	echo "I do programming.</br>";
-}
-
-
-
-
-
-
-?>
+	function prog(){
+		echo "I do programming.</br>";
+	}
