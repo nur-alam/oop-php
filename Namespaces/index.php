@@ -14,8 +14,11 @@ new j;
 new p;
 new r;
 
-echo pi."</br>";
-echo l\react."</br>";
+$n = new j;
+$n->yo()."<br>";
+
+echo pi."<br>";
+echo l\react."<br>";
 echo l\getname("nur");
  
 

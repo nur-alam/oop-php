@@ -10,6 +10,11 @@
 			echo "I am learning java </br>";
 		}
 
+		public function yo()
+		{
+			echo "nurjava.";
+		}
+
 	}
 
 
